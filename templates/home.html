@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Menu — RoyalBite{% endblock %}
+{% block content %}
+
+
+<section class="hero">
+<h1>Our Menu</h1>
+<p class="subtitle">Choose your delight. Hover rows for details — click star to upvote (demo interactive).</p>
+</section>
+
+
+<section class="menu-section">
+<div class="menu-table">
+<table>
+<thead>
+<tr><th>ID</th><th>Dish</th><th>Price (₹)</th><th>Rating</th></tr>
+</thead>
+<tbody>
+{% for item in menu %}
+<tr class="menu-row">
+<td>{{ item.dish_id }}</td>
+<td>{{ item.dish_name }}</td>
+<td>{{ '%.2f'|format(item.price) }}</td>
+<td>
+<span class="rating">{{ '%.2f'|format(item.rating) }}</span>
+<button class="btn-star animate__animated" data-dish="{{ item.dish_name }}" onclick="animateStar(this)">★</button>
+</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+
+<aside class="top-dish">
+<h3>⭐ Highly Ordered</h3>
+{% if top_dish %}
+<div class="top-card">
+<h4>{{ top_dish.dish_name }}</h4>
+<p>Rating: <strong>{{ '%.2f'|format(top_dish.rating) }}</strong></p>
+<p>Price: ₹{{ '%.2f'|format(top_dish.price) }}</p>
+</div>
+{% else %}
+<p>No dishes available.</p>
+{% endif %}
+</aside>
+</section>
+
+
+<div class="centered">
+<a href="/feedback" class="cta-btn animate__animated animate__pulse animate__infinite">Give Feedback</a>
+</div>
+
+
+{% endblock %}

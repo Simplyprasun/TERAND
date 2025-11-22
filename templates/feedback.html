@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Feedback — RoyalBite{% endblock %}
+{% block content %}
+
+
+<section class="feedback-card">
+<h2>Give Your Feedback</h2>
+<form method="POST" action="/submit_feedback" class="feedback-form">
+<label for="dish_name">Choose Dish</label>
+<select name="dish_name" id="dish_name">
+{% for d in dishes %}
+<option value="{{ d }}">{{ d }}</option>
+{% endfor %}
+</select>
+
+
+<label for="rating">Rate (1-5)</label>
+<select name="rating" id="rating">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option selected>5</option>
+</select>
+
+
+<label for="text_feedback">Feedback</label>
+<textarea name="text_feedback" id="text_feedback" rows="4" placeholder="Tell us what you liked or what we can improve..."></textarea>
+
+
+<button type="submit" class="submit-btn">Submit Feedback</button>
+</form>
+</section>
+
+
+{% endblock %}

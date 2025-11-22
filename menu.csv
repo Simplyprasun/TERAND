@@ -1,0 +1,31 @@
+dish_id,dish_name,price,rating
+1,Veg Thali,70.0,4.70
+2,Egg Thali,80.0,1.00
+3,Chicken Thali,70.0,1.50
+4,Roti,10.0,4.00
+5,Fish Thali,70.0,3.00
+6,Veg Chowmein,100.0,4.50
+7, Egg Chowmein,120.0,4.70
+8, Chicken Chowmein,140.0,4.60
+9,Veg Roll,100.0,4.20
+10,Mixed Roll,150.0,4.40
+11,Veg Biriyani,100.0,4.50
+12,Chicken Biriyani,120.0,4.90
+13,Paneer Butter Masla,90.0,4.10
+14,Chicken Butter Masala,180.0,4.30
+15,Chicken Pakora,50.0,4.80
+16,Coffee,20.0,4.70
+17,Aam Panna,40.0,4.50
+18,Lime Soda,35.0,4.70
+19,Bhelpuri,10.0,3.60
+20,Panipuri,30.0,4.10
+21,Papri Chaat,20.0,3.90
+22,Milk Tea,10.0,4.40
+23,idli,50.0,3.40
+24,Corn Dog,70.0,4.70
+25,Veg Burger,70.0,4.30
+26,Butter Toast,10.0,3.10
+27,Egg Toast,20.0,4.50
+28,Cream Pasta,80.0,4.30
+29,Spagetti,120.0,4.40
+30,Ice Cream( Vanilla/ Chocolate/ Butterscotch/ Strawberry),75.0,4.80

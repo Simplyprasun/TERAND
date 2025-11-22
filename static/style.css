@@ -1,0 +1,36 @@
+:root{
+--royal:#0b3d91; /* deep royal blue */
+--light:#f6f9ff;
+--accent:#4ea1ff;
+--card:#ffffffbb;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; background:#003fba; margin:0; color:#ffffff}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:var(--royal);color:white}
+.topbar .brand{font-weight:700;font-size:1.3rem}
+.nav-actions .nav-btn{color:white;margin-left:12px;text-decoration:none;padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.12)}
+.container{padding:28px;max-width:1100px;margin:0 auto}
+.hero h1{color:var(--royal);margin:6px 0}
+.subtitle{color:#234a6b}
+.menu-section{display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:start}
+.menu-table table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(11,61,145,0.08)}
+.menu-table th, .menu-table td{padding:14px 18px;text-align:left}
+.menu-table thead{background:linear-gradient(90deg,var(--royal),var(--accent));color:white}
+.menu-row{transition:transform .18s ease, box-shadow .18s ease}
+.menu-row:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(11,61,145,0.08)}
+.top-dish{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(11,61,145,0.06)}
+.top-card h4{margin:0 0 6px}
+.centered{text-align:center;margin-top:20px}
+.cta-btn{display:inline-block;padding:12px 28px;border-radius:999px;background:var(--royal);color:white;text-decoration:none;font-weight:600;box-shadow:0 8px 20px rgba(11,61,145,0.15)}
+.btn-star{margin-left:10px;border:none;background:transparent;font-size:20px;cursor:pointer;transform-origin:center}
+.feedback-card{max-width:700px;margin:10px auto;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 12px 30px rgba(11,61,145,0.06)}
+.feedback-form label{display:block;margin-top:12px;margin-bottom:6px;color:#18324b}
+.feedback-form select, .feedback-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #dbeaf7}
+.submit-btn{margin-top:14px;padding:12px 18px;border-radius:10px;background:var(--royal);color:white;border:none;cursor:pointer}
+.footer{text-align:center;padding:18px;color:#1b3b55}
+
+
+/* small screens */
+@media (max-width:900px){
+.menu-section{grid-template-columns:1fr;}
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{% block title %}Royal Blue Menu{% endblock %}</title>
+
+
+<!-- Animate.css CDN (random source for button animations) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+<nav class="topbar">
+<div class="brand">RoyalBite</div>
+<div class="nav-actions">
+<a href="/" class="nav-btn">Menu</a>
+<a href="/feedback" class="nav-btn">Give Feedback</a>
+</div>
+</nav>
+
+
+<main class="container">
+{% block content %}{% endblock %}
+</main>
+
+
+<footer class="footer">&copy; RoyalBite — Fresh & Royal</footer>
+</body>
+</html>
